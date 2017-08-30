@@ -14,13 +14,6 @@
 
 
 
-  
-  
-    
-    
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
-
 
 
 
@@ -158,6 +151,17 @@ border-top-color: #1E92FB;    /*上边框颜色*/
 border-left-color: #1E92FB;    /*左边框颜色*/
 }
 </style>
+
+<script>
+(function(){
+if(''){
+if (prompt('请输入文章密码') !== ''){
+alert('密码错误！');
+history.back();
+}
+}
+})();
+</script>
 
   <title>个人介绍 | Hexo</title>
   
@@ -655,6 +659,17 @@ border-left-color: #1E92FB;    /*左边框颜色*/
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
