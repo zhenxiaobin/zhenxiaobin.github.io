@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="甄晓彬">
 <meta property="og:description" content="本文使用脚本打 enterprise 包，生成的 ipa 包上传至蒲公英进行测试分发 了解打包命令 xcodebuild 负责编译，通过工程文件，生成 app 文件。xcrun 通过app文件，来生成 ipa 文件。(包含了签名的过程)man xcodebuild 查看xcodebuild文档  将打包过程脚本化1、下载脚本github按照文档稍微修改一下，把autobuild文件夹一起拖到工程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-07T07:46:12.000Z">
+<meta property="og:updated_time" content="2017-09-07T07:49:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS自动打包并发布IPA脚本">
 <meta name="twitter:description" content="本文使用脚本打 enterprise 包，生成的 ipa 包上传至蒲公英进行测试分发 了解打包命令 xcodebuild 负责编译，通过工程文件，生成 app 文件。xcrun 通过app文件，来生成 ipa 文件。(包含了签名的过程)man xcodebuild 查看xcodebuild文档  将打包过程脚本化1、下载脚本github按照文档稍微修改一下，把autobuild文件夹一起拖到工程">
@@ -385,6 +385,7 @@
 <p>xcodebuild 负责编译，通过工程文件，生成 app 文件。<br>xcrun 通过app文件，来生成 ipa 文件。(包含了签名的过程)<br>man xcodebuild 查看xcodebuild文档</p>
 </blockquote>
 <h2 id="将打包过程脚本化"><a href="#将打包过程脚本化" class="headerlink" title="将打包过程脚本化"></a>将打包过程脚本化</h2><h4 id="1、下载脚本github"><a href="#1、下载脚本github" class="headerlink" title="1、下载脚本github"></a>1、下载脚本<a href="https://github.com/zhenxiaobin/autobuild" target="_blank" rel="external">github</a></h4><p>按照文档稍微修改一下，把autobuild文件夹一起拖到工程根目录下，<br>注：exportOptions.plist 这个要注意一下，配置不对，会导出失败。</p>
+<a id="more"></a>
 <h4 id="2、cd-到工程目录下，再cd进autobuild目录下，执行"><a href="#2、cd-到工程目录下，再cd进autobuild目录下，执行" class="headerlink" title="2、cd 到工程目录下，再cd进autobuild目录下，执行"></a>2、cd 到工程目录下，再cd进autobuild目录下，执行</h4><blockquote>
 <p>python autobuild.py -w ../yourworkspace.xcworkspace -s yourscheme</p>
 </blockquote>

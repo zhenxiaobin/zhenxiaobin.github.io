@@ -378,44 +378,19 @@
 
       
         
-          
-            <hr>
+          <hr>
 <p>本文使用脚本打 enterprise 包，生成的 ipa 包上传至蒲公英进行测试分发</p>
 <h2 id="了解打包命令"><a href="#了解打包命令" class="headerlink" title="了解打包命令"></a>了解打包命令</h2><blockquote>
 <p>xcodebuild 负责编译，通过工程文件，生成 app 文件。<br>xcrun 通过app文件，来生成 ipa 文件。(包含了签名的过程)<br>man xcodebuild 查看xcodebuild文档</p>
 </blockquote>
 <h2 id="将打包过程脚本化"><a href="#将打包过程脚本化" class="headerlink" title="将打包过程脚本化"></a>将打包过程脚本化</h2><h4 id="1、下载脚本github"><a href="#1、下载脚本github" class="headerlink" title="1、下载脚本github"></a>1、下载脚本<a href="https://github.com/zhenxiaobin/autobuild" target="_blank" rel="external">github</a></h4><p>按照文档稍微修改一下，把autobuild文件夹一起拖到工程根目录下，<br>注：exportOptions.plist 这个要注意一下，配置不对，会导出失败。</p>
-<h4 id="2、cd-到工程目录下，再cd进autobuild目录下，执行"><a href="#2、cd-到工程目录下，再cd进autobuild目录下，执行" class="headerlink" title="2、cd 到工程目录下，再cd进autobuild目录下，执行"></a>2、cd 到工程目录下，再cd进autobuild目录下，执行</h4><blockquote>
-<p>python autobuild.py -w ../yourworkspace.xcworkspace -s yourscheme</p>
-</blockquote>
-<p>如果是打包xcodeproj（没有使用pod）项目，则打包命令格式如下所示:</p>
-<blockquote>
-<p>python autobuild.py -p ../yourscheme.xcodeproj -s yourscheme</p>
-</blockquote>
-<p>如果成功了显示这样</p>
-<blockquote>
-<p><strong><strong> ARCHIVE SUCCEEDED </strong></strong></p>
-<p>2017-09-07 11:26:16.474 xcodebuild[43544:164415] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path ‘/var/folders/7h/99qrtthx4vz4pzm_fll0gjt00000gn/T/xxx_2017-09-07_11-26-16.473.xcdistributionlogs’.<br>1.2.840.113635.100.1.61<br>Exported XXXXX.xcarchive to: /Users/zhenxb/Desktop/xxxx2017-09-07_11-26-15<br><strong><strong> EXPORT SUCCEEDED </strong></strong></p>
-<p>cleaned archiveFile: /Users/zhenxb/Desktop/APP/ZFTQPOS/autobuild/ZFTQPOS.xcarchive<br>ipaPath:~/Desktop/ZFTQPOS2017-09-07_11-26-15/ZFTQPOS.ipa<br>uploading….<br>Upload Success<br>DownUrl is:<a href="http://www.pgyer.com/xxx" target="_blank" rel="external">http://www.pgyer.com/xxx</a></p>
-</blockquote>
-<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题:"></a>常见问题:</h3><p>1、找不到request module.</p>
-<blockquote>
-<p>ImportError: No module named requests</p>
-</blockquote>
-<p>打开终端使用命令安装 </p>
-<blockquote>
-<p>sudo easy_install -U requests;</p>
-</blockquote>
-<p>2、安装了两个版本xcode</p>
-<blockquote>
-<p>The following build commands failed:<br>CompileC build/TestApp.build/Release-iphoneos/TestApp.build/Objects-normal/armv7/TestController.o TestApp/TestViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler<br>(1 failure) </p>
-</blockquote>
-<p>使用命令检测你Xcode 安装路径</p>
-<blockquote>
-<p> xcode-select -print-path</p>
-</blockquote>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/07/blog2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
