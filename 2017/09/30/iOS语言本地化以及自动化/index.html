@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="一. 注册账号注册链接https://git.oschina.net 二. 创建项目点击右上角的 “+”  ，选择新建项目按钮，然后填写所需信息。 三. 创建SSH KeysSSH key 可以让你在你的电脑和 Git @ OSC 之间建立安全的加密连接。生成sshkey: 1$  ssh-keygen -t rsa -C &amp;quot;你的邮箱&amp;quot; 查看你的public key">
+<meta name="description" content="###一、配置需要国际化的语言  选中project-&amp;gt;Info-&amp;gt;Localizations，然后点击”+”，添加需要国际化/本地化的语言，如下图（默认需要勾选Use Base Internationalization）  ###二、应用名称本地化/国际化  1、选中Info.plist，按下键盘上的command + N，选择Strings File（iOS-&amp;gt;Resour">
 <meta property="og:type" content="article">
-<meta property="og:title" content="码云平台使用">
-<meta property="og:url" content="http://zhenxiaobin.com/2017/09/01/blog1/index.html">
+<meta property="og:title" content="iOS语言本地化以及自动化">
+<meta property="og:url" content="http://zhenxiaobin.com/2017/09/30/iOS语言本地化以及自动化/index.html">
 <meta property="og:site_name" content="甄晓彬">
-<meta property="og:description" content="一. 注册账号注册链接https://git.oschina.net 二. 创建项目点击右上角的 “+”  ，选择新建项目按钮，然后填写所需信息。 三. 创建SSH KeysSSH key 可以让你在你的电脑和 Git @ OSC 之间建立安全的加密连接。生成sshkey: 1$  ssh-keygen -t rsa -C &amp;quot;你的邮箱&amp;quot; 查看你的public key">
+<meta property="og:description" content="###一、配置需要国际化的语言  选中project-&amp;gt;Info-&amp;gt;Localizations，然后点击”+”，添加需要国际化/本地化的语言，如下图（默认需要勾选Use Base Internationalization）  ###二、应用名称本地化/国际化  1、选中Info.plist，按下键盘上的command + N，选择Strings File（iOS-&amp;gt;Resour">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-01T03:13:46.000Z">
+<meta property="og:updated_time" content="2017-09-30T07:23:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="码云平台使用">
-<meta name="twitter:description" content="一. 注册账号注册链接https://git.oschina.net 二. 创建项目点击右上角的 “+”  ，选择新建项目按钮，然后填写所需信息。 三. 创建SSH KeysSSH key 可以让你在你的电脑和 Git @ OSC 之间建立安全的加密连接。生成sshkey: 1$  ssh-keygen -t rsa -C &amp;quot;你的邮箱&amp;quot; 查看你的public key">
+<meta name="twitter:title" content="iOS语言本地化以及自动化">
+<meta name="twitter:description" content="###一、配置需要国际化的语言  选中project-&amp;gt;Info-&amp;gt;Localizations，然后点击”+”，添加需要国际化/本地化的语言，如下图（默认需要勾选Use Base Internationalization）  ###二、应用名称本地化/国际化  1、选中Info.plist，按下键盘上的command + N，选择Strings File（iOS-&amp;gt;Resour">
 
 
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://zhenxiaobin.com/2017/09/01/blog1/"/>
+  <link rel="canonical" href="http://zhenxiaobin.com/2017/09/30/iOS语言本地化以及自动化/"/>
 
 
 
 
 
-  <title>码云平台使用 | 甄晓彬</title>
+  <title>iOS语言本地化以及自动化 | 甄晓彬</title>
   
 
 
@@ -285,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhenxiaobin.com/2017/09/01/blog1/">
+    <link itemprop="mainEntityOfPage" href="http://zhenxiaobin.com/2017/09/30/iOS语言本地化以及自动化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="甄晓彬">
@@ -302,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">码云平台使用</h1>
+          <h1 class="post-title" itemprop="name headline">iOS语言本地化以及自动化</h1>
         
 
         <div class="post-meta">
@@ -314,8 +314,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-01T10:50:34+08:00">
-                2017-09-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-30T15:44:44+08:00">
+                2017-09-30
               </time>
             
 
@@ -337,8 +337,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/开发工具/" itemprop="url" rel="index">
-                    <span itemprop="name">开发工具</span>
+                  <a href="/categories/IOS/" itemprop="url" rel="index">
+                    <span itemprop="name">IOS</span>
                   </a>
                 </span>
 
@@ -379,36 +379,44 @@
       
 
       
-        <p><strong>一. 注册账号</strong><br>注册链接<a href="https://git.oschina.net" target="_blank" rel="external">https://git.oschina.net</a></p>
-<p><strong>二. 创建项目</strong><br>点击右上角的 “+”  ，选择新建项目按钮，然后填写所需信息。</p>
-<p><strong>三. 创建SSH Keys</strong><br>SSH key 可以让你在你的电脑和 Git @ OSC 之间建立安全的加密连接。<br>生成sshkey:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  ssh-keygen -t rsa -C &quot;你的邮箱&quot;</div></pre></td></tr></table></figure>
-<p>查看你的public key<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  cat ~/.ssh/id_rsa.pub</div></pre></td></tr></table></figure></p>
-<p>ssh-rsa AAAAB3NzaC1yc2EAAAL…. 你的邮箱</p>
-<p>然后添加到 Git @ OSC <a href="http://git.oschina.net/keys" target="_blank" rel="external">http://git.oschina.net/keys</a></p>
-<p>注意：一定是ssh-rsa开头，你的邮箱结尾，要拷贝全。</p>
-<p>查看是否添加成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@git.oschina.net</div></pre></td></tr></table></figure>
-<p>如果返回Welcome to Git@OSC, 你的名字!<br>那就OK了</p>
-<p><strong>四. 本地初始化一个项目</strong><br>设置git的基础配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;你的名字或昵称&quot;</div><div class="line">$ git config --global user.email &quot;你的邮箱&quot;</div></pre></td></tr></table></figure>
-<p>在初始化版本库的文件夹中执行以下命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cd 本地项目文件夹</div><div class="line">$ git init</div><div class="line">$ git remote add origin &lt;你的项目地址&gt;</div></pre></td></tr></table></figure>
-<p><strong>注:</strong>项目地址形式为:<br>HTTPS:     <a href="http://git.oschina.net/xxx/xxx.git" target="_blank" rel="external">http://git.oschina.net/xxx/xxx.git</a><br>或者<br>SSH:     git@git.oschina.net:xxx/xxx.git</p>
-<p>若不小心填错项目地址,可执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git remote rm origin</div><div class="line">$ git remote add origin &lt;你的项目地址&gt;</div></pre></td></tr></table></figure>
-<p>至此完成了一次版本你的初始化</p>
-<p>克隆一个项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone &lt;项目地址&gt;</div></pre></td></tr></table></figure>
-<p>完成第一次提交，用一下命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ cd  进入你已经初始化好的或者克隆项目的目录</div><div class="line">$ git pull origin master</div><div class="line">$ git add .</div><div class="line">$ git commit -m &quot;第一次提交&quot;</div><div class="line">$ git push origin master</div></pre></td></tr></table></figure>
-<p>强制更新</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git fetch --all</div><div class="line">$ git reset --hard origin/master</div></pre></td></tr></table></figure>
-<p>强制推送</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push --force</div></pre></td></tr></table></figure>
-<p><strong>常见问题：</strong><br>1、git pull 失败 ,提示：fatal: refusing to merge unrelated histories<br>在进行Git pull 时，添加一个可选项</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin master --allow-unrelated-histories</div></pre></td></tr></table></figure>
-<p>未完待续。。。。</p>
+        <hr>
+<p>###一、配置需要国际化的语言</p>
+<blockquote>
+<p>选中project-&gt;Info-&gt;Localizations，然后点击”+”，添加需要国际化/本地化的语言，如下图（默认需要勾选Use Base Internationalization）</p>
+</blockquote>
+<p>###二、应用名称本地化/国际化</p>
+<blockquote>
+<p>1、选中Info.plist，按下键盘上的command + N，选择Strings File（iOS-&gt;Resource-&gt;Strings File）<br>2、文件名字命名为InfoPlist，且必须是这个名字<br>3、选中InfoPlist.strings，在Xcode的File inspection（Xcode右侧文件检查器）中点击Localize，目的是选择我们需要本地化的语言</p>
+</blockquote>
+<p>#####在InfoPlist.strings(english)中加入如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// Localizable App Name是App在英语环境环境下显示的名称</div><div class="line">CFBundleDisplayName = &quot;Localizable App Name&quot;;</div></pre></td></tr></table></figure></p>
+<p>#####在InfoPlist.strings(Chinese(Simplified))中加入如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// Localizable App Name是App在英语环境环境下显示的名称</div><div class="line">CFBundleDisplayName = &quot;国际化App名称&quot;;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>###三、代码中字符串的本地化</p>
+<blockquote>
+<p>字符本地化和App名称本地化过程如出一辙，只是创建的文件名成不一样（连同后缀一起，文件名必须是Localizable.strings），其他步骤完全相同。</p>
+</blockquote>
+<p>#####在Localizable.strings(english)中加入如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&quot;login&quot; = &quot;Login&quot;;</div></pre></td></tr></table></figure></p>
+<p>#####在Localizable.strings(Chinese(Simplified))中加入如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&quot;login&quot; = &quot;登录&quot;;</div></pre></td></tr></table></figure></p>
+<p>#####使用：loginButton.title = NSLocalizedString(“login”, comment: “login”)<br>这种方式不友好，稍后介绍自动化生成需要的文件</p>
+<p>###四、定制字符串本地化</p>
+<blockquote>
+<p>创建XBSTR.strings的文件，使用如下：<br>NSString *title = NSLocalizedStringFromTable(@”click”, @”XBSTR”, nil);</p>
+</blockquote>
+<p>###五、使用脚本读取 Localizable.strings ，然后输出成我们需要的常量格式。</p>
+<blockquote>
+<p>1、选中targets-&gt;Build Phases，然后点击”+”，然后 New Run Script Phases<br>2、将 Run Script 拖动放到在Compile Sources的上面<br>3、脚本如下：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"># -*- coding: utf-8 -*</div><div class="line"># Localizable.strings文件路径</div><div class="line">localizableFile=&quot;$&#123;SRCROOT&#125;/$&#123;PROJECT_NAME&#125;/Source/en.lproj/Localizable.strings&quot;</div><div class="line">#  生成的swift文件路径</div><div class="line">localizedFile=&quot;$&#123;SRCROOT&#125;/$&#123;PROJECT_NAME&#125;/Source/Utils/LocalizedUtils.swift&quot;</div><div class="line"># 转换格式</div><div class="line">awk &apos;&#123;print $1,$2,$1&quot;;&quot;&#125;&apos; &quot;$&#123;localizableFile&#125;&quot; &gt; &quot;$&#123;localizableFile&#125;.tmp&quot;</div><div class="line"># 将localizable.strings中的文本转为swift格式的常量，存入一个临时文件</div><div class="line">sed &quot;s/^\&quot;/ static var localized_/g&quot; &quot;$&#123;localizableFile&#125;.tmp&quot; | sed &quot;s/\&quot; = \&quot;/: String &#123; return \&quot;/g&quot; | sed &quot;s/;$/.localized &#125;/g&quot; &gt; &quot;$&#123;localizedFile&#125;.tmp&quot;</div><div class="line"># 先将localized作为计算属性输出到目标文件</div><div class="line">echo -e &quot;import Foundation\n\nextension String &#123;\n  var localized: String &#123; return NSLocalizedString(self, comment: self) &#125;&quot; &gt; &quot;$&#123;localizedFile&#125;&quot;</div><div class="line"># 再将临时文件中的常量增量输出到目标文件</div><div class="line">cat &quot;$&#123;localizedFile&#125;.tmp&quot; &gt;&gt; &quot;$&#123;localizedFile&#125;&quot;</div><div class="line"># 最后增量输出一个&quot;&#125;&quot;到目标文件，完成输出</div><div class="line">echo -e &quot;\n&#125;&quot; &gt;&gt; &quot;$&#123;localizedFile&#125;&quot;</div><div class="line"># 删除临时文件</div><div class="line">rm &quot;$&#123;localizableFile&#125;.tmp&quot;</div><div class="line">rm &quot;$&#123;localizedFile&#125;.tmp&quot;</div></pre></td></tr></table></figure>
+<p>#####本地化文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&quot;create&quot; = &quot;zhenxiaobin&quot;;</div><div class="line">&quot;login&quot; = &quot;Login&quot;;</div><div class="line">&quot;logout&quot; = &quot;Logout&quot;;</div></pre></td></tr></table></figure>
+<p>#####输出文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">import Foundation</div><div class="line"></div><div class="line">extension String &#123;</div><div class="line">  var localized: String &#123; return NSLocalizedString(self, comment: self) &#125;</div><div class="line"> static var localized_create: String &#123; return &quot;create&quot;.localized &#125;</div><div class="line"> static var localized_login: String &#123; return &quot;login&quot;.localized &#125;</div><div class="line"> static var localized_logout: String &#123; return &quot;logout&quot;.localized &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>#####使用：<br>loginButton.title = .localized_login</p>
+<p>####六、然后再说说我弄自动化脚本时候遇到的坑</p>
+<blockquote>
+<p>1、脚本拷贝到项目也许会不生效，解决办法，用xcode里面的空格替换一下脚本里的空格。不知道Xcode9 抽的什么疯。<br>2、注意一下路径问题，Localizable.strings这个路径就不多说了，根据自己的路径修改一下就好了，LocalizedUtils.swift这个输出文件，路径注意一下，前面的路径一定要先创建好，不然会报错，找不到文件。第一次Build，你会发现LocalizedUtils.swift这个文件在项目里没有，客官不要着急，在上一级目录下（如：Utils）Show In Finder，是不是有，没有你打我，然后拖到项目里，就OK了。<br>每次更新Localizable.strings，记得Build一下。<br>3、脚本的问题，有时间再开一篇，记录一下。<br>4、应用内语言切换，稍后会补上。</p>
+</blockquote>
+<p>奉上<a href="https://github.com/zhenxiaobin/Localizable" target="_blank" rel="external">Demo</a></p>
 
       
     </div>
@@ -462,15 +470,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/07/blog2/" rel="next" title="iOS自动打包并发布IPA脚本">
+                <i class="fa fa-chevron-left"></i> iOS自动打包并发布IPA脚本
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/07/blog2/" rel="prev" title="iOS自动打包并发布IPA脚本">
-                iOS自动打包并发布IPA脚本 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
