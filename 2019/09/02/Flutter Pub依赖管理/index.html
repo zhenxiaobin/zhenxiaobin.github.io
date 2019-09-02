@@ -94,16 +94,22 @@
 
 
 
-<meta name="description" content="who care">
-<meta property="og:type" content="website">
-<meta property="og:title" content="甄晓彬">
-<meta property="og:url" content="http://zhenxiaobin.com/index.html">
+<meta name="description" content="一、新建一个Flutter Package工程   Next   设置工程名字，选择Fluter SDK路径，选择本地存放位置   Finish 二、配置pubspec.yaml文件  name：工程名 description：工程描述 version：版本号 author：作者信息  邮箱一下要加上，不然后面检查会不通过. homepage：主页 一般填写的github地址  ** 以上信息是必">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flutter Pub依赖管理">
+<meta property="og:url" content="http://zhenxiaobin.com/2019/09/02/Flutter Pub依赖管理/index.html">
 <meta property="og:site_name" content="甄晓彬">
-<meta property="og:description" content="who care">
+<meta property="og:description" content="一、新建一个Flutter Package工程   Next   设置工程名字，选择Fluter SDK路径，选择本地存放位置   Finish 二、配置pubspec.yaml文件  name：工程名 description：工程描述 version：版本号 author：作者信息  邮箱一下要加上，不然后面检查会不通过. homepage：主页 一般填写的github地址  ** 以上信息是必">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://chuantu.xyz/t6/702/1567402328x2073530527.png">
+<meta property="og:image" content="http://chuantu.xyz/t6/702/1567403258x2073530527.png">
+<meta property="og:image" content="http://chuantu.xyz/t6/702/1567406899x2073530527.png">
+<meta property="og:image" content="http://chuantu.xyz/t6/702/1567411523x2073530527.png">
+<meta property="og:updated_time" content="2019-09-02T08:19:13.525Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="甄晓彬">
-<meta name="twitter:description" content="who care">
+<meta name="twitter:title" content="Flutter Pub依赖管理">
+<meta name="twitter:description" content="一、新建一个Flutter Package工程   Next   设置工程名字，选择Fluter SDK路径，选择本地存放位置   Finish 二、配置pubspec.yaml文件  name：工程名 description：工程描述 version：版本号 author：作者信息  邮箱一下要加上，不然后面检查会不通过. homepage：主页 一般填写的github地址  ** 以上信息是必">
+<meta name="twitter:image" content="http://chuantu.xyz/t6/702/1567402328x2073530527.png">
 
 
 
@@ -132,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://zhenxiaobin.com/"/>
+  <link rel="canonical" href="http://zhenxiaobin.com/2019/09/02/Flutter Pub依赖管理/"/>
 
 
 
 
 
-  <title>甄晓彬</title>
+  <title>Flutter Pub依赖管理 | 甄晓彬</title>
   
 
 
@@ -163,9 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <!-- 左上角实现fork me on github -->
@@ -271,9 +275,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -303,9 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/02/Flutter Pub依赖管理/" itemprop="url">Flutter Pub依赖管理</a></h1>
+          <h1 class="post-title" itemprop="name headline">Flutter Pub依赖管理</h1>
         
 
         <div class="post-meta">
@@ -359,6 +361,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o">本文总阅读量</i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
 
           
 
@@ -377,9 +384,7 @@
       
 
       
-        
-          
-            <h2 id="一、新建一个Flutter-Package工程"><a href="#一、新建一个Flutter-Package工程" class="headerlink" title="一、新建一个Flutter Package工程"></a>一、新建一个Flutter Package工程</h2><p><img src="http://chuantu.xyz/t6/702/1567402328x2073530527.png" alt="此处输入图片的描述"></p>
+        <h2 id="一、新建一个Flutter-Package工程"><a href="#一、新建一个Flutter-Package工程" class="headerlink" title="一、新建一个Flutter Package工程"></a>一、新建一个Flutter Package工程</h2><p><img src="http://chuantu.xyz/t6/702/1567402328x2073530527.png" alt="此处输入图片的描述"></p>
 <p>  Next</p>
 <p>  设置工程名字，选择Fluter SDK路径，选择本地存放位置</p>
 <p>  Finish</p>
@@ -466,8 +471,6 @@ curl cip.cc
 <p>这样执行</p>
 <pre><code>sudo pub publish
 </code></pre>
-          
-        
       
     </div>
     
@@ -477,6 +480,35 @@ curl cip.cc
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="甄晓彬 WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="甄晓彬 Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -484,166 +516,28 @@ curl cip.cc
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhenxiaobin.com/2017/09/30/iOS语言本地化以及自动化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="甄晓彬">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="甄晓彬">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/30/iOS语言本地化以及自动化/" itemprop="url">iOS语言本地化以及自动化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-30T15:44:44+08:00">
-                2017-09-30
-              </time>
+              <a href="/2017/09/30/iOS语言本地化以及自动化/" rel="next" title="iOS语言本地化以及自动化">
+                <i class="fa fa-chevron-left"></i> iOS语言本地化以及自动化
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/IOS/" itemprop="url" rel="index">
-                    <span itemprop="name">IOS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <hr>
-<h3 id="一、配置需要国际化的语言"><a href="#一、配置需要国际化的语言" class="headerlink" title="一、配置需要国际化的语言"></a>一、配置需要国际化的语言</h3><blockquote>
-<p>选中project-&gt;Info-&gt;Localizations，然后点击”+”，添加需要国际化/本地化的语言，如下图（默认需要勾选Use Base Internationalization）</p>
-</blockquote>
-<h3 id="二、应用名称本地化-国际化"><a href="#二、应用名称本地化-国际化" class="headerlink" title="二、应用名称本地化/国际化"></a>二、应用名称本地化/国际化</h3><blockquote>
-<p>1、选中Info.plist，按下键盘上的command + N，选择Strings File（iOS-&gt;Resource-&gt;Strings File）<br>2、文件名字命名为InfoPlist，且必须是这个名字<br>3、选中InfoPlist.strings，在Xcode的File inspection（Xcode右侧文件检查器）中点击Localize，目的是选择我们需要本地化的语言</p>
-</blockquote>
-<h5 id="在InfoPlist-strings-english-中加入如下代码："><a href="#在InfoPlist-strings-english-中加入如下代码：" class="headerlink" title="在InfoPlist.strings(english)中加入如下代码："></a>在InfoPlist.strings(english)中加入如下代码：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// Localizable App Name是App在英语环境环境下显示的名称</div><div class="line">CFBundleDisplayName = &quot;Localizable App Name&quot;;</div></pre></td></tr></table></figure>
-<h5 id="在InfoPlist-strings-Chinese-Simplified-中加入如下代码："><a href="#在InfoPlist-strings-Chinese-Simplified-中加入如下代码：" class="headerlink" title="在InfoPlist.strings(Chinese(Simplified))中加入如下代码："></a>在InfoPlist.strings(Chinese(Simplified))中加入如下代码：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// Localizable App Name是App在英语环境环境下显示的名称</div><div class="line">CFBundleDisplayName = &quot;国际化App名称&quot;;</div></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/30/iOS语言本地化以及自动化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -653,311 +547,34 @@ curl cip.cc
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhenxiaobin.com/2017/09/07/blog2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="甄晓彬">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="甄晓彬">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/07/blog2/" itemprop="url">iOS自动打包并发布IPA脚本</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-07T15:44:44+08:00">
-                2017-09-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/IOS/" itemprop="url" rel="index">
-                    <span itemprop="name">IOS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <hr>
-<p>本文使用脚本打 enterprise 包，生成的 ipa 包上传至蒲公英进行测试分发</p>
-<h2 id="了解打包命令"><a href="#了解打包命令" class="headerlink" title="了解打包命令"></a>了解打包命令</h2><blockquote>
-<p>xcodebuild 负责编译，通过工程文件，生成 app 文件。<br>xcrun 通过app文件，来生成 ipa 文件。(包含了签名的过程)<br>man xcodebuild 查看xcodebuild文档</p>
-</blockquote>
-<h2 id="将打包过程脚本化"><a href="#将打包过程脚本化" class="headerlink" title="将打包过程脚本化"></a>将打包过程脚本化</h2><h4 id="1、下载脚本github"><a href="#1、下载脚本github" class="headerlink" title="1、下载脚本github"></a>1、下载脚本<a href="https://github.com/zhenxiaobin/autobuild" target="_blank" rel="external">github</a></h4><p>按照文档稍微修改一下，把autobuild文件夹一起拖到工程根目录下，<br>注：exportOptions.plist 这个要注意一下，配置不对，会导出失败。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/07/blog2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhenxiaobin.com/2017/09/01/blog1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="甄晓彬">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="甄晓彬">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/01/blog1/" itemprop="url">码云平台使用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-01T10:50:34+08:00">
-                2017-09-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/开发工具/" itemprop="url" rel="index">
-                    <span itemprop="name">开发工具</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><strong>一. 注册账号</strong><br>注册链接<a href="https://git.oschina.net" target="_blank" rel="external">https://git.oschina.net</a></p>
-<p><strong>二. 创建项目</strong><br>点击右上角的 “+”  ，选择新建项目按钮，然后填写所需信息。</p>
-<p><strong>三. 创建SSH Keys</strong><br>SSH key 可以让你在你的电脑和 Git @ OSC 之间建立安全的加密连接。<br>生成sshkey:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  ssh-keygen -t rsa -C &quot;你的邮箱&quot;</div></pre></td></tr></table></figure>
-<p>查看你的public key<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/01/blog1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -965,6 +582,12 @@ curl cip.cc
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDU1Ni83MTEx"></div>
+    
+  </div>
+
 
         </div>
         
@@ -985,8 +608,17 @@ curl cip.cc
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -1074,6 +706,22 @@ curl cip.cc
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、新建一个Flutter-Package工程"><span class="nav-number">1.</span> <span class="nav-text">一、新建一个Flutter Package工程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、配置pubspec-yaml文件"><span class="nav-number">2.</span> <span class="nav-text">二、配置pubspec.yaml文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、库内容"><span class="nav-number">3.</span> <span class="nav-text">三、库内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、上传到pub库"><span class="nav-number">4.</span> <span class="nav-text">四、上传到pub库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、各种意外各种坑"><span class="nav-number">5.</span> <span class="nav-text">四、各种意外各种坑</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1217,10 +865,10 @@ curl cip.cc
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -1249,6 +897,17 @@ curl cip.cc
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
